@@ -12,11 +12,26 @@ p{
 body{
   background-color:lightpink; 
   text-align:center;
+} 
+button{
+  padding:15px; 
+  margin:10px;
+  cursor:pointer;
 }
 </style>
 </head>
 <body>
 <h1>hello world!</h1>
 <p>this is my first website!</p>
+<button onclick="changeColor('light blue')"> light blue </button>
+<button onclick="changeColor('light green')"> light green </button>
+<button onclick="changeColor('light pink')"> light pink </button>
+
+<script>
+  function changeColor(color){
+    document.body.style.backgroundColor=color;
+  }
+</script>
+  
 </body>
 </html>
